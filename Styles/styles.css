@@ -1,3 +1,51 @@
 .calendar-one{
     background-color: none;
 }
+.font-ctrl-down{
+
+}
+
+.data-table{
+    display: inline-block;
+}
+.data-table > ul,
+.data-table > ul > li > ul{
+    user-select: none;
+    list-style: none;
+    display: inline-block;
+}
+.data-table > ul > li{
+    position: relative;
+}
+.data-table > ul > li > ul{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.font-ctrl-left{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url("/Assets/Image/Icons/arrow29px.svg") no-repeat center;
+}
+.font-ctrl-right{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url("/Assets/Image/Icons/arrow29px.svg") no-repeat center;
+}
+.font-ctrl-down{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url("/Assets/Image/Icons/arrow29px.svg") no-repeat center;
+}
+.data-table > ul > li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+.data-table > ul > li > span {
+    display: block;
+}
