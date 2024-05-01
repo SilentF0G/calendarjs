@@ -1,12 +1,18 @@
-function createCalendar(elem, year, month) {
-	elem = document.querySelector(elem);
-
-	let mon = month - 1;
-	let d = new Date(year, month);
+document.getElementById('theDateTwo').valueAsDate = new Date();
+alert("succes");
+document.getElementById('button-succes').onclick = function getDate(){
+    let dateDip = new Date();
+    let dateStart = document.getElementById('theDateOne').value;
+    let dateEnd = document.getElementById('theDateTwo').value;
+    dateStart = Date.parse(dateStart);
+    dateEnd = Date.parse(dateEnd);
+    let out = document.getElementById('out');
+    for (i = dateStart; i < dateEnd; i = i+24*60*60*1000){
+       dateDip += new Date(i).toISOString().substr(0, 10);
+    }
 }
 
-function getDay(date) {
-	let day = date.getDay();
-	if (day == 0) day = 7;
-	return day - 1;
+document.getElementById('button-2').onclick = function showDate(){
+    document.getElementById('theDateOne').show;
+    document.getElementById('theDateTwo').show;
 }
