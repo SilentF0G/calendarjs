@@ -9,96 +9,24 @@
 
     <body>
 
-        <input type="date" id="theDateOne" class="calendar-one"/>
-        <input type="date" id="theDateTwo" class="calendar-two"/>
-        <button id="button-succes">Применить</button>
-        <button id="button-2">Вывести</button>
-        <div id="out"></div>
+        <div class="input-container">
+            <label>Дата от</label>
+            <input type="date" id="theDateOne" class="calendar-one"/>
+            <label>Дата до</label>
+            <input type="date" id="theDateTwo" class="calendar-one"/>
+        </div>
 
-        <div class="date-table">
-            <ul>
-                <li>
-                    <span>
-                        <input alt="24.08.2018">
-                        <i class="font-ctrl-down"></i>
-                    </span>
-                    <ul>
-                        <li>
-                            <span>
-                                <i class="font-ctrl-left"></i>
-                                <b>август</b>
-                                <i class="font-ctrl-right"></i>
-                            </span>
-                            <span>
-                                <i class="font-ctrl-left"></i>
-                                <b>2018</b>
-                                <i class="font-ctrl-right"></i>
-                            </span>
+        <button id="buttonSucces">Применить</button>
+        <label id="checkDate">Проверка даты не позднее сегодня</label>
+        <div>
+            <label id="yearsDate">Лет </label>
+            <label id="monthsDate">Месяцев </label>
+            <label id="daysDate">Дней </label>
+        </div>
 
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Вс</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>7</td>
-                                        <td>8</td>
-                                        <td>9</td>
-                                        <td>10</td>
-                                        <td>11</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td>14</td>
-                                        <td>15</td>
-                                        <td>16</td>
-                                        <td>17</td>
-                                        <td>18</td>
-                                        <td>19</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>21</td>
-                                        <td>22</td>
-                                        <td>23</td>
-                                        <td>24</td>
-                                        <td>25</td>
-                                        <td>26</td>
-                                    </tr>
-                                    <tr>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                        <td>30</td>
-                                        <td>31</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="popup-bg">
+            <form class="popup-calendar">
+            </form>
         </div>
 
         <script src="Assets/script.js"></script>
